@@ -4,31 +4,48 @@
 <head>
      <meta charset="utf-8">
      <title>Vente</title>
-     <link rel="stylesheet" href="../CSS/main.css" />
-     <link rel="stylesheet" href="../CSS/vente.css" />
+     <link rel="stylesheet" href="../CSS/header-footer.css">
+     <link rel="stylesheet" href="../CSS/matcha0.css">
+     <link rel="stylesheet" href="../CSS/matcha1.css"/>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- polices d'écriture-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Anek+Gujarati:wght@100..800&family=Delius&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-     
-        <nav id="side-nav">
-            <ul>
-                <li class="side-nav-link"><a href="" class="side-link">Vente</a></li>
-                <li class="side-nav-link"><a href="" class="side-link">Histoire</a></li>
-                <li class="side-nav-link"><a href="" class="side-link">A propos</a></li>
-                <li class="side-nav-link"><a href="" class="side-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
+     <header>
+          <img src="../images/tea-logo.svg" alt="logo" class="logo">
+          <h1 id="title">Matcha Tea</h1>
+          <nav id="nav-bar">
+              <label for="btn">
+                  <img src="../images/cat.jpg" alt="icone client" class="icon">
+              </label>
+                  <input type="checkbox" id="btn" class="btn">
+              <ul id="nav-menu">
+                  <li><a href="Index.html">Compte</a></li>
+                  <li><a href="fansite1.html">Commandes</a></li>   
+              </ul>
+          </nav>
+     </header>
+          
+      <nav>
+          <ul id="side-nav">
+              <li><a href="../HTML/vente.html">Vente</a></li>
+              <li><a href="">Histoire</a></li>
+              <li><a href="">A propos</a></li>
+              <li><a href="../HTML/contact.html">Contact</a></li>
+          </ul>
+      </nav>
+<!--debut page-->
 <main>
-     <h1> Boutique </h1>
+     <h2> Boutique </h2>
 <section>
-     <h2> Nos thés au matcha</h2>
+     <h3> Nos thés au matcha</h3>
 <!-- 1ERE LIGNE DE PHOTOS-->
 <div class="ligne1">
 
@@ -118,7 +135,7 @@
 </section>
 
 
-    <h2> Le coin beauté   </h2>
+    <h3> Le coin beauté   </h3>
 <!-- 3EME LIGNE DE PHOTOS-->
 <section>
 <div class="ligne3">
@@ -163,9 +180,9 @@
 
    <div class="descriptionProduit">
         <p> Skin Cure</p>
-        <img src="../MATCHATEA/images/matcha.skincure.png">
+        <img src="../images/matcha.skincure.png">
         <div class="shop">
-           <p>19.90€</p>
+           <p>49.99€</p>
             <button type="submit">Ajouter au panier
            <i class="fa-solid fa-cart-shopping"></i>
             </button>
@@ -174,9 +191,9 @@
 
    <div class="descriptionProduit">
         <p> Complément Matcha cheveux & ongles </p>
-        <img src="../MATCHATEA/images/matcha.hairnails.png">
+        <img src="../images/matcha.hairnails.png">
         <div class="shop">
-           <p>19.90€</p>
+           <p>39.99€</p>
             <button type="submit">Ajouter au panier 
                  <i class="fa-solid fa-cart-shopping"></i>
             </button>
@@ -185,9 +202,9 @@
 
    <div class="descriptionProduit">
         <p> Inner Cure </p>
-        <img src="../MATCHATEA/images/matcha.innercure.png">
+        <img src="../images/matcha.innercure.png">
         <div class="shop">
-           <p>19.90€</p>
+           <p>49.99€</p>
            <button class="bouton" type="submit">Ajouter au panier 
                 <i class="fa-solid fa-cart-shopping"></i>
            </button>
@@ -199,8 +216,27 @@
 </body>
 <!-- FIN PAGE PRINCIPALE
     DEBUT DU FOOTER-->
-    <footer>
-     
-    </footer>
+<footer id="footer-content">
+     <section>
+         <h3>Navigaton</h3>
+             <ul id="footer-link">
+                 <li><a href="../index.html">Accueil</a></li>
+                 <li><a href="">Histoire</a></li>
+                 <li><a href="">A propos</a></li>
+                 <li><a href="../HTML/vente.html">Vente</a></li>
+                 <li><a href="../HTML/contact.html">Contact</a></li>
+             </ul>
+     </section>
+
+     <section class="footer-img">
+         <p class="footer-txt1">Thanks for stopping by !</p>
+         <p class="footer-txt2">Let's keep in touch</p>
+     </section>
+     <section id="footer-infos">
+         <h3>Coordonnées</h3>
+             <p>8 Rue d'Hozier<br>13002<br>Marseille</p>
+     </section>
+</footer>
+
 </body>
 </html>

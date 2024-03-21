@@ -1,8 +1,8 @@
 body    {
     background-color: #ffffff;
 }
-main {    padding-left: 10%;
-}
+main { padding-left: 10%;
+background-color: rgb(215, 165, 173);}
 
 main section {
     background-color: #f1ddc5;
@@ -11,16 +11,7 @@ main section {
     margin: 30px;
 }
 
-
-h1{
-    text-align: right;
-    font-size : 40px;
-    font-family: "Tenor Sans";
-    width: fit-content;
-    border-left: 2px solid #DDC869;
-    border-bottom: 2px solid #DDC869;
-}
-h2{
+h2,h3{
     text-align: center;
     font-size: 25px;
     font-family: "Tenor Sans";
@@ -28,7 +19,6 @@ h2{
     border-left: 2px solid #DDC869;
     border-bottom: 2px solid #DDC869;
 }
-
 
 .ligne4, .ligne3,.ligne2,.ligne1{
     display: flex;
@@ -84,8 +74,8 @@ button i {color: #43390F;}
 .bouton:hover {
     color: #ffffff;
     border: 1px solid #ffffff;
-    background-color: #43390F; /* Ajout de la couleur de fond au survol */
-    transform: scale(1.05); /* Ajout d'une légère mise à l'échelle */
+    background-color: #43390F;
+    transform: scale(1.05);
 }
 button:hover i{color:#ffffff}
   
