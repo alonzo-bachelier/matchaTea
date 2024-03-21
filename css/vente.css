@@ -1,14 +1,16 @@
 body    {
-    background-color: #FFF7EB;
+    background-color: #ffffff;
 }
 main {    padding-left: 10%;
 }
-section{
-    background-color: white;
+
+main section {
+    background-color: #f1ddc5;
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 30px;
 }
+
 
 h1{
     text-align: right;
@@ -25,24 +27,10 @@ h2{
     width: fit-content;
     border-left: 2px solid #DDC869;
     border-bottom: 2px solid #DDC869;
-
-}
-
-.ligne1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 20px;
-}
-.ligne2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 20px;
 }
 
 
-.ligne4, .ligne3{
+.ligne4, .ligne3,.ligne2,.ligne1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -54,7 +42,8 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E1CE7A;
+    background-color: #f1ddc5;
+    padding-top: 10px;
     padding-bottom: 20px;
     border-radius: 1%;}
 
@@ -70,51 +59,66 @@ h2{
     flex-direction: column;
 }
 .shop p {
-    font-size: 20px;
+    font-size: 15px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-span i {color: white}
-i{color: #DDC869;}
+span i {color: white;}
 
-button{
-    height: 25px;
-    padding:20px;
-    border-color: rgb(0, 0, 0);
-    border-radius: 1%;
-    background-color: #ffffff;
-    color: #E1CE7A;
+button i {color: #43390F;}
+
+.bouton {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 10px;
+    border: 1px solid #43390F;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
     cursor: pointer;
-    font-family: "Arial";
-    margin: 10px;
- }
-
-button:hover{
-    color: white;
-    background-color: #EC7357;
-    border : 2px solid white;
+    color: #43390F;
+    z-index: 1;
+  }
+  
+.bouton:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #43390F; /* Ajout de la couleur de fond au survol */
+    transform: scale(1.05); /* Ajout d'une légère mise à l'échelle */
 }
+button:hover i{color:#ffffff}
+  
+
+  
+
 
 
 /* RESPONSIVE DESIGN */
+
 /* ORDI, ecran de minimum 1280px */
-@media screen and (min-width:1280px)
+@media screen and (min-width:1081px)
    {
-    body {background-color:#ffca4b;}
+    main section
+    {background-color: #ff8c00;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 30px;}
     }
  
     /* TABLETTES, écrans de481PX à 1024px*/
-@media screen and (min-width:481px) and (max-width:1024px)
+@media screen and (min-width:481px) and (max-width:1080px)
   { 
-section
-    {background-color: white;
+main section
+    {background-color: #bd8d52;
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 30px;}
 } 
 @media screen and (max-width:481)
 {
-    section
-    {background-color: white;
+    main section
+    {background-color: rgb(123, 14, 14);
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 30px;}
