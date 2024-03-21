@@ -1,0 +1,11 @@
+main{
+    padding-left: 10%;
+    background-color: #DADADA;
+}
+#main-products{
+    background-color: #FBF3D5;
+}
+#main-products img{
+    width: 150px;
+    height: auto;
+}

@@ -8,10 +8,6 @@
 header{
     background-color: white;
 }
-main{
-    padding-left: 10%;
-    background-color: #DADADA;
-}
 footer{
     padding-left: 10%;
 }
@@ -90,8 +86,8 @@ footer{
 }
 #side-nav li{
     list-style-type: none;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     transform: rotate(-90deg);
 }
 #side-nav li:hover{
