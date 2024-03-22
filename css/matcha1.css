@@ -5,9 +5,7 @@ main { padding-left: 10%;}
 
 main section {
     background-color: #f1ddc5;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 30px;
+    
 }
 
 h2,h3{
@@ -78,7 +76,9 @@ button i {color: #43390F;}
 }
 button:hover i{color:#ffffff}
   
-
+.CLASSEE { 
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 30px;}
   
 
 

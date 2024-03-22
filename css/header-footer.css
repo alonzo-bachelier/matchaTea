@@ -8,8 +8,8 @@
 body{
     overflow-x: hidden;
 }
+
 header{
-    background-color: white;
     z-index: 1;
 }
 footer{
