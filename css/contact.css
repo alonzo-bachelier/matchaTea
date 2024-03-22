@@ -4,7 +4,6 @@ body {
 
 form {
     background-color:#ffffff;
-    border-radius:10px ;
     padding: 50px;
     margin-top: 80px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Légère ombre pour le formulaire */
@@ -16,7 +15,8 @@ form h2{
     font-family: 'Pacifico';
     text-align:start ;
     color: #333333;
-    text-decoration:#333333, underline
+    text-decoration:#333333, underline;
+    margin-bottom: 5%;
 }
 .corpsFormulaire {
     display: flex;
@@ -26,8 +26,7 @@ form h2{
     margin-top: 2%;
     gap: 10%;
     background-color: #f0fff0;
-    
- 
+    box-shadow: 0px 0px 20px -18px;
 
 }
 
@@ -53,29 +52,94 @@ form h2{
 
     .input {
         width: 100%;
-        max-width: 220px;
         height: 45px;
         padding: 12px;
+        margin-top: 5px;
         border: 1.5px solid lightgrey;
         outline: none;
-        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
         box-shadow: 0px 0px 20px -18px;
     }
     .inputMessage{
-       height: 200px;
-       width: 150px;
+       height: 370px;
+       width: 100%;
+       border: 1.5px solid lightgrey; 
+       margin-top: 35px;
+       padding:12px
+    }
+
+    .input:focus,.inputMessage:focus {
+        border: 2px solid #ff7f50;
+    }
+
+    .input:hover, .inputMessage:hover{
+        border: 2px solid #ff7f50;
+        transition: none;
+    }
+
+    select[name="listedéroulante"] {
+        width:115%
+    }
+/* couleur des icônes */
+
+    .fa-solid, .fa-regular {
+        color: #ff7f50;
+    }
+    /* bouton valider */
+    button{
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #ff7f50;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 17px;
+        padding: 16px;
+        width: 130px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        position: relative;
     }
     
-
-    .input:hover {
-        border: 2px solid lightgrey;
-        box-shadow: 0px 0px 20px -17px;
+    button:after{
+        content: ' »   ';
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        right: -15px;
+        transform: translateY(-50%);
+        transition: 0.5s;
     }
-
-    .input:active {
-        transform: scale(0.95);
+    
+    button:hover:after {
+        opacity: 1;
+        right: 0;
     }
+    
+    /* RESPONSIVE DESIGN */ 
 
-    .input:focus {
-        border: 2px solid grey;
+
+
+    /* Pour les téléphones */
+    @media (max-width: 600px)
+    {
+       
+    }
+    
+    /* Pour les tablettes en portrait */
+    @media (min-width: 601px) and (max-width: 900px) 
+    {
+       
+    }
+    
+    /* Pour les tablettes en paysage et petits écrans d'ordinateur */
+    @media (min-width: 901px) and (max-width: 1200px) 
+    {
+       
+    }
+    
+    /* ORDINATEURS */
+    @media screen and (min-width:1150px) and (max-width:1560px)
+    {
+    
     }

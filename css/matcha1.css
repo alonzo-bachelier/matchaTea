@@ -1,8 +1,7 @@
 body    {
     background-color: #ffffff;
 }
-main { padding-left: 10%;
-background-color: rgb(215, 165, 173);}
+main { padding-left: 10%;}
 
 main section {
     background-color: #f1ddc5;
@@ -85,7 +84,54 @@ button:hover i{color:#ffffff}
 
 
 /* RESPONSIVE DESIGN */
+@media screen and (min-width:1150px) and (max-width:1560px){
+    .card{
+        width: 200px;
+        height: 200px;
+    }
+}
+/* Pour les téléphones */
+@media (max-width: 600px) {
+    .main-products{
+       
+    }
+    .container-texte-defilant{
+        width: 100vw;
+    }
+    main{
+        padding-left: 0vw;
+    }
+}
 
+/* Pour les tablettes en portrait */
+@media (min-width: 601px) and (max-width: 900px) {
+    #side-nav {
+        
+    }
+    .background {
+       
+    }
+}
+
+/* Pour les tablettes en paysage et petits écrans d'ordinateur */
+@media (min-width: 901px) and (max-width: 1200px) {
+    #side-nav {
+        
+    }
+    .background {
+       
+    }
+}
+
+/* Pour les écrans d'ordinateur */
+@media (min-width: 1201px) {
+    #side-nav {
+        
+    }
+    .background {
+       
+    }
+}
 /* ORDI, ecran de minimum 1280px */
 @media screen and (min-width:1081px)
    {
@@ -93,7 +139,7 @@ button:hover i{color:#ffffff}
     {background-color: #ff8c00;
     padding-top: 40px;
     padding-bottom: 40px;
-    margin: 30px;}
+    margin: 0px;}
     }
  
     /* TABLETTES, écrans de481PX à 1024px*/
