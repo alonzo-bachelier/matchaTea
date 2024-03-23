@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/matcha0.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Matcha Tea</title>
+</head>
+
+<body id="profil">
+    <header>
+        <img src="images/tea-logo.svg" alt="logo" class="logo">
+        <label for="btn">
+            <svg viewbox="0 0 100 80" width="40" height="40" class="icon">
+                <rect width="100" height="15"></rect>
+                <rect y="35" width="100" height="15"></rect>
+                <rect y="70" width="100" height="15"></rect>
+            </svg>
+        </label>
+        <input type="checkbox" id="btn" class="btn">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="profil.html" class="home-link">Profil</a></li>
+            <li class="nav-item"><a href="commandes.html" class="home-link">Commandes</a></li>
+        </ul>
+        <h1 id="title">Matcha Tea</h1>
+        <h2 class="profil-header">Profil</h2>
+        <nav id="nav-bar1">
+            <label for="btn1">
+                <img src="images/cat.jpg" alt="icone client" class="icon1">
+            </label>
+                <input type="checkbox" id="btn1" class="btn1">
+            <ul id="nav-menu1">
+                <li class="nav-item"><a href="compte.html" class="home-link">Compte</a></li>
+                <li class="nav-item"><a href="commandes.html" class="home-link">Commandes</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <nav>
+        <ul id="side-nav">
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="commandes.html">commandes</a></li>
+        </ul>
+    </nav>
+    <main id="profil-main">
+        <section>
+            <form class="user-infos">
+                <img src="images/cat.jpg" alt="profil picture" class="profil-pic">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" placeholder="Ex: Bachelier Alonzo" minlength="4" maxlength="8" size="10" class="input-info"/>
+                <label for="mail">Email</label>
+                <input type="text" id="mail" name="mail" placeholder="Ex: laplateforme@mail.com" required class="input-info"/>
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" name="adresse" placeholder="E: 8 Rue d'Hozier 13002 Marseille" class="input-adresse"/>
+                <input type="submit" value="Confirmer" class="submit-form">
+            </form>
+        </section>
+    </main>
+    <footer id="footer-content">
+        <section>
+            <h3>Navigaton</h3>
+                <ul id="footer-link">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="histoire.html">Histoire</a></li>
+                    <li><a href="a-propos.html">A propos</a></li>
+                    <li><a href="vente.html">Vente</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </section>
+        <section class="footer-img">
+            <p class="footer-txt1">Thanks for stopping by !</p>
+            <p class="footer-txt2">Let's keep in touch</p>
+        </section>
+        <section id="footer-infos">
+            <h3>Coordonnées</h3>
+                <p>8 Rue d'Hozier<br>13002<br>Marseille</p>
+        </section>
+    </footer>
+</body>
+</html>

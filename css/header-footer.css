@@ -20,11 +20,13 @@ header {
     position: relative;
     z-index: 2; 
     width: 100%; 
+    height: 75px;
     top: 0; 
 }
 /*header*/
 .logo{
-    padding: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -32,8 +34,27 @@ header {
 #title{
     font-family: "Pacifico", cursive;
     color: #9EB897;
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: center;
+    font-size: 1.6em;
+}
+.profil-header{
+    font-size: 1.5em;
+    top: 20px;
+    right: 10px;
+    display: block;
+    position: absolute;
+    border: 2px solid black;
+    width: 15vw;
+    text-align: center;
+}
+#profil header #nav-bar1{
+    display: none;
+    position: fixed;
+}
+.icon1{
+    padding-top: 10px;
+    padding-right: 15px;
 }
 @media screen and (min-width:900px){
     .icon0, .btn0{
@@ -48,19 +69,17 @@ header {
     display: block; 
 }
 .navbar0{
-display: flex;
-justify-content: flex-start;
-padding-top: 20px;
-}
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    }
 .nav-menu0{
-display: flex;
-align-items: center;
-
+    display: flex;
+    align-items: center;
 }
 /*bouton client     \/    */
 .icon1, .btn1{
     display: block;
-    padding: 10px;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -118,6 +137,9 @@ align-items: center;
     list-style-type: none;
     margin-top: 110px;
     transform: rotate(-90deg);
+}
+#profil #side-nav li{
+    margin-top: 220px;
 }
 #side-nav li:hover{
     transform: rotate(0deg);
@@ -258,9 +280,9 @@ align-items: center;
     }
     .icon, .btn{
         display: block;
-        padding: 10px;
+        padding: 5px;
         position: absolute;
-        top: 10px;
+        top: 15px;
         left: 10px;
         width: 35px;
         height: 35px;
@@ -274,5 +296,10 @@ align-items: center;
     }
     #nav-menu1{
         width: 50%;
+    }
+}
+@media screen and (max-width:430px){
+    .profil-header{
+        border: none;
     }
 }
