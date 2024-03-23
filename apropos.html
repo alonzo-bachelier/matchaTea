@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="matcha1.css">
+    <link rel="stylesheet" href="CSS/matcha1.css">
+    <link rel="stylesheet" href="CSS/header-footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>A propos</title>
 </head>
 <body>
-    <header id="head"> 
+    <header> 
         <div><img src="images/tea-logo.svg" alt="logo" class="logo"></div>
         <h1 id="title">Matcha Tea</h1>
         <nav class="navbar" id="hautdepage">
@@ -15,31 +19,23 @@
                 <div><img src="images/cat.jpg" alt="icone client" class="icon"></div>
             </label>
             <input type="checkbox" id="btn" class="btn">
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="Index.html" class="home-link">Compte</a></li>
-                <li class="nav-item"><a href="fansite1.html" class="home-link">Commandes</a></li>   
+            <ul id="nav-menu">
+                <li><a href="Index.html">Compte</a></li>
+                <li><a href="fansite1.html">Commandes</a></li>  
             </ul>
         </nav>
         <nav id="side-nav">
             <ul>
-                <li class="side-nav-link"><a href="" class="side-link">Vente</a></li>
-                <li class="side-nav-link"><a href="" class="side-link">Histoire</a></li>
-                <li class="side-nav-link"><a href="" class="side-link">A propos</a></li>
-                <li class="side-nav-link"><a href="" class="side-link">Contact</a></li>
+                <li><a href="">Vente</a></li>
+                <li><a href="">Histoire</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
-        <nav id="side-nav">
-            <ul>
-                <li class="side-nav-link"><a href="" class="side-link">Vente</a></li>
-                <li class="side-nav-link"><a href="" class="side-link">Histoire</a></li>
-                <li class="side-nav-link"><a href="" class="side-link">A propos</a></li>
-                <li class="side-nav-link"><a href="" class="side-link">Contact</a></li>
-            </ul>
-        </nav>   
     </header>
     <main>
         <section>
-            <h1>L'équipe de Matcha Tea</h1>
+            <h2>L'équipe de Matcha Tea</h2>
             </section>
         <section class="article">
         <section class="group">
@@ -82,15 +78,25 @@ service à nos clients. Nous sommes fiers de ce que nous faisons et nous espéro
 nous aimons les sélectionner pour vous.</p></section>
     </section>
     </main>
-    <footer>
-        <h3>Navigaton</h3>
-        <ul>
-            <li><a href="" class="footer-link">Acceuil</a></li>
-            <li><a href="" class="footer-link">Histoire</a></li>
-            <li><a href="" class="footer-link">A propos</a></li>
-            <li><a href="" class="footer-link">Vente</a></li>
-            <li><a href="" class="footer-link">Contact</a></li>
-        </ul>
+    <footer id="footer-content">
+        <section>
+            <h3>Navigaton</h3>
+                <ul id="footer-link">
+                    <li><a href="">Acceuil</a></li>
+                    <li><a href="">Histoire</a></li>
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">Vente</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+        </section>
+        <section class="footer-img">
+            <p class="footer-txt1">Thanks for stopping by !</p>
+            <p class="footer-txt2">Let's keep in touch</p>
+        </section>
+        <section id="footer-infos">
+            <h3>Coordonnées</h3>
+                <p>8 Rue d'Hozier<br>13002<br>Marseille</p>
+        </section>
     </footer>
 </body>
 </html>
