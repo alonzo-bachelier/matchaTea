@@ -1,17 +1,21 @@
 body    {
     background-color: #ffffff;
 }
-main { padding-left: 10%;}
+main {
+    background-color: #f1ddc5;
+    margin-left: 8%;
+}
 
 main section {
-    background-color: #f1ddc5;
     
-}
+    background-color: #ffffff;
+    padding-top: 25px;
+    margin: 8%;}
+        
 
 h2,h3{
     text-align: center;
     font-size: 25px;
-    font-family: "Tenor Sans";
     width: fit-content;
     border-left: 2px solid #DDC869;
     border-bottom: 2px solid #DDC869;
@@ -29,10 +33,10 @@ h2,h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f1ddc5;
+    background-color: #f0fff0;
     padding-top: 10px;
     padding-bottom: 20px;
-    border-radius: 1%;}
+}
 
 .descriptionProduit p {
     text-align: center;
@@ -82,13 +86,10 @@ button:hover i{color:#ffffff}
   
 
 
-
 /* RESPONSIVE DESIGN */
-@media screen and (min-width:1150px) and (max-width:1560px){
-    .card{
-        width: 200px;
-        height: 200px;
-    }
+@media screen and (min-width:1150px) and (max-width:1560px)
+{
+    
 }
 /* Pour les téléphones */
 @media (max-width: 600px) {
@@ -105,52 +106,35 @@ button:hover i{color:#ffffff}
 
 /* Pour les tablettes en portrait */
 @media (min-width: 601px) and (max-width: 900px) {
-    #side-nav {
-        
-    }
-    .background {
-       
-    }
+  
 }
 
 /* Pour les tablettes en paysage et petits écrans d'ordinateur */
 @media (min-width: 901px) and (max-width: 1200px) {
-    #side-nav {
-        
-    }
-    .background {
-       
-    }
 }
 
 /* Pour les écrans d'ordinateur */
-@media (min-width: 1201px) {
-    #side-nav {
-        
-    }
-    .background {
-       
-    }
+@media (min-width: 1201px) 
+{
+    
 }
 /* ORDI, ecran de minimum 1280px */
 @media screen and (min-width:1081px)
-   {
-    main section
-    {background-color: #ff8c00;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 0px;}
-    }
+  {}
  
     /* TABLETTES, écrans de481PX à 1024px*/
 @media screen and (min-width:481px) and (max-width:1080px)
   { 
 main section
-    {background-color: #bd8d52;
+    {background-color: #ffffff;
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 30px;}
+
 } 
+
+/* ECRAN DE MAX 480px */
+
 @media screen and (max-width:481)
 {
     main section
@@ -164,7 +148,7 @@ main section
         align-items: center;
         background-color: #E1CE7A;
         padding-bottom: 20px;
-        border-radius: 1%;}
+    }
 
 
 .ligne1,.ligne2,.ligne3,.ligne4

@@ -3,8 +3,10 @@
 
 <head>
      <meta charset="utf-8">
-     <title>Vente</title>
+     <title>Commandes</title>
      <link rel="stylesheet" href="../CSS/header-footer.css">
+     <link rel="stylesheet" href="../CSS/commandes.css">
+
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- polices d'écriture-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +32,6 @@
             </ul>
         </nav>
    </header>
-        
     <nav>
         <ul id="side-nav">
             <li><a href="../HTML/vente.html">Vente</a></li>
@@ -41,11 +42,75 @@
     </nav>
     <!--debut page-->
 <main>
+    
+    <h2>Mes commandes</h2>
+    <table>      <!-- TABLEAU -->
+        <thead>  <!-- EN-TETE DU TABLEAU -->
+            
+            <tr> <!-- Ligne d'en-tête -->
+                <!-- Colonnes d'en-tête -->
+                <th>Numéro de commande</th>
+                <th>Date de commande</th>
+                <th>Articles</th>
+                <th>Prix total</th>
+            </tr>
+        </thead>  <!-- FIN EN-TETE-->
 
-
-    CONTENU
-
-
+        <!-- CORPS TABLEAU -->
+        <tbody>
+            <!-- Commande en cours -->
+            <tr class="commandeCours">
+                <!-- Numéro de commande -->
+                <td class="commandeTitre">#123456</td>
+                <!-- Date de commande -->
+                <td>20 mars 2024</td>
+                <!-- Prix total -->
+                <td>45.80€</td>
+                <!-- Articles de la commande -->
+                <td>
+                    <!-- Conteneur pour les articles -->
+                    <div class="articles">
+                        <!-- Premier article -->
+                        <div class="article">
+                            <!-- Image du produit -->
+                            <img src="../images/matcha.breakfast.png" alt="Produit 1">
+                            <!-- Nom du produit -->
+                            <p>Inner Cure</p>
+                        </div>
+                        <!-- Deuxième article -->
+                        <div class="article">
+                            <!-- Image du produit -->
+                            <img src="../LA-PLATEFORME/MATCHATEA/images/matcha-original.jpg" alt="Produit 2">
+                            <!-- Nom du produit -->
+                            <p> Matcha Original</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!-- Commande passée -->
+            <tr class="commandePasse">
+                <!-- Numéro de commande -->
+                <td class="commandeTitre">#987654</td>
+                <!-- Date de commande -->
+                <td>15 mars 2024</td>
+                <!-- Prix total -->
+                <td>29.90€</td>
+                <!-- Articles de la commande -->
+                <td>
+                    <!-- Conteneur pour les articles -->
+                    <div class="articles">
+                        <!-- Premier article -->
+                        <div class="article">
+                            <!-- Image du produit -->
+                            <img src="../images/matcha.skincure.png" alt="Produit 3">
+                            <!-- Nom du produit -->
+                            <p>Serum</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </main>
 </body>
 <!-- FIN PAGE PRINCIPALE
@@ -74,7 +139,3 @@
 
 </body>
 </html>
-
-
-
-    </MAIN>
