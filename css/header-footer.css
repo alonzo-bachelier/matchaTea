@@ -4,6 +4,7 @@
     padding: 0;
     font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
     transition: 0.6s;
+    font-family: "Nunito", sans-serif;
 }
 body{
     overflow-x: hidden;
@@ -34,49 +35,70 @@ header {
     padding-top: 10px;
     text-align: center;
 }
+@media screen and (min-width:900px){
+    .icon0, .btn0{
+        display: none;
+    }
+}
+
+.icon0, .btn0{
+    display: none;
+}
+[id^=btn1]:checked + #nav-menu1{   /* ^= veulent dire commence par suivi de btn pour aller chercher tout les id commancant par btn checked pour dire que lorsqu'il est cocher ont applique a l'ul display block*/
+    display: block; 
+}
+.navbar0{
+display: flex;
+justify-content: flex-start;
+padding-top: 20px;
+}
+.nav-menu0{
+display: flex;
+align-items: center;
+
+}
 /*bouton client     \/    */
-.icon, .btn{
+.icon1, .btn1{
     display: block;
     padding: 10px;
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 10px;
     cursor: pointer;
     width: 40px;
     height: 40px;
 }
-#btn{
+#btn1{
     display: none; /*permet de cacher l'input de la navbar (la checkbox cochable)*/
 }
-[id^=btn]:checked + #nav-menu{   /* ^= veulent dire commence par suivi de btn pour aller chercher tout les id commancant par btn checked pour dire que lorsqu'il est cocher ont applique a l'ul display block*/
+[id^=btn1]:checked + #nav-menu1{   /* ^= veulent dire commence par suivi de btn pour aller chercher tout les id commancant par btn checked pour dire que lorsqu'il est cocher ont applique a l'ul display block*/
     display: block; 
 }
 /*bouton client     /\   */
-#nav-bar{
+#nav-bar1{
     display: flex;
     justify-content: flex-start;
     padding-top: 10px;
 }
 /*section avec les ul>li pour les liens*/
-#nav-menu{
+#nav-menu1{
     display: none;
     position: absolute;
     top: 75px;
     right: 0px;
-    width: 150px;
     backdrop-filter: blur(1px);
-    background-color: rgba(255, 255, 255, 0.512);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(255, 255, 255);
 }
 /*les lien du menu*/
-#nav-menu li{
+#nav-menu1 li{
     list-style-type: none;
     padding: 0 10px 0 10px;
     padding-bottom: 10px;
     padding-top: 10px;  
+    text-align: right;
 }
 /*lien du menu*/
-#nav-menu li a{
+#nav-menu1 li a{
     text-decoration: none;
     font-size: 1.3em;
     color: black;
@@ -94,7 +116,7 @@ header {
 }
 #side-nav li{
     list-style-type: none;
-    margin-top: 120px;
+    margin-top: 110px;
     transform: rotate(-90deg);
 }
 #side-nav li:hover{
@@ -148,7 +170,7 @@ header {
     width: 450px;
 }
 @media (max-width: 600px){
-    #side-nav {
+    #side-nav{
         display: none; 
     }
     #footer-content{
@@ -169,17 +191,6 @@ header {
         padding: 15px;
     }
 }
-@media (min-width:2560px) {
-    main, footer, #side-nav{
-        font-size: 30px;
-    }
-}
-@media (min-width:4000px) {
-    main, footer, #side-nav{
-        font-size: 40px;
-    }
-}
-/* Pour les tablettes en portrait */
 @media (min-width: 601px) and (max-width: 900px) {
     #side-nav {
         display: none; 
@@ -196,8 +207,72 @@ header {
         width: 90%;
     }
 }
-
-/* Pour les tablettes en paysage et petits écrans d'ordinateur */
-@media (min-width: 901px) and (max-width: 1200px) {
+@media screen and (min-width:900px){
+    .icon, .btn, .nav-menu li{
+        display: none;
+    }
+}
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
     
+}
+.nav-item{
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+    
+}
+.home-link{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: black;
+}
+@media screen and (max-width:900px){
+    .icon{
+        cursor: pointer;
+    }
+    .logo{
+        display: none;
+        position: fixed;
+    }
+    .navbar, #btn, .nav-menu{
+        display: none; /*permet de cacher l'input de la navbar (la checkbox cochable)*/
+    }
+    [id^=btn]:checked + .nav-menu{   /* ^= veulent dire commence par suivi de btn pour aller chercher tout les id commancant par btn checked pour dire que lorsqu'il est cocher ont applique a l'ul display block*/
+        display: block;
+        
+    }
+    .nav-menu{
+        background-color: #ffffff;
+        position: absolute;
+        top: 70px;
+        width: 50%;
+    }
+    .navbar{
+        align-items: center;
+    }
+    .icon, .btn{
+        display: block;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    a{
+        font-size: 1em;
+    }
+    .nav-item{
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+    #nav-menu1{
+        width: 50%;
+    }
 }
