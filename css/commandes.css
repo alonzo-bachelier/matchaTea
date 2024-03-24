@@ -1,63 +1,61 @@
-html, body{
+html,
+body {
     height: 100%;
 }
 main {
     padding-left: 10vw;
-  background-color:rgb(51, 47, 47);
+    background-color: rgb(51, 47, 47);
 }
-footer{
+footer {
     bottom: 0;
     width: 90%;
 }
 @media screen and (max-width: 900px) {
-  main {
-    padding-left: 0;
-    width: 100vw;
-  }
+    main {
+        padding-left: 0;
+        width: 100vw;
+    }
 }
-@media screen and (max-width:1300px){
-    main{
+@media screen and (max-width: 1300px) {
+    main {
         overflow-x: scroll;
     }
 }
-h2{
+.titre-main {
     font-size: 2em;
     padding: 10px;
     background-color: rgb(51, 47, 47);
     color: white;
     width: 100vw;
     border-bottom: 0.5px solid black;
-
 }
 table {
-  width: 100vw;
-  border-collapse: collapse;
-  background-color: #ffffff;
+    width: 100vw;
+    border-collapse: collapse;
+    background-color: #ffffff;
 }
-thead{
+thead {
     background-color: rgb(51, 47, 47);
     color: white;
-   
 }
-th{
+th {
     padding: 10px;
 }
-td{
+td {
     padding-left: 1vw;
 }
-tr:hover{
+tr:hover {
     background-color: rgba(0, 0, 0, 0.09);
 }
 img {
-  width: 50px;
-  height: auto;
-  border-radius: 50%;
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
 }
-td img:hover{
+td img:hover {
     width: 100px;
     height: auto;
 }
-th{
+th {
     padding-right: 15vw;
 }
-

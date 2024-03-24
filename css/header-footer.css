@@ -1,339 +1,374 @@
 /* Structure */
 * {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  transition: 0.6s;
-  font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.6s;
+    font-family: "Nunito", sans-serif;
 }
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 header {
-  background-color: white;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 75px;
+    top: 0;
 }
 footer {
-  padding-left: 10vw;
+    padding-left: 10vw;
 }
 /*fin structure*/
-header {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: 75px;
-  top: 0;
-}
-/*header*/
-.logo {
-  padding-top: 15px;
-  padding-left: 20px;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-}
-#title a {
-  font-family: "Pacifico", cursive;
-  color: #9eb897;
-  font-size: 1em;
-  text-decoration: none;
-}
-#title {
-  text-align: center;
-  padding-top: 15px;
-}
-.profil-header {
-  font-size: 1.5em;
-  top: 20px;
-  right: 10px;
-  display: block;
-  position: absolute;
-  border: 2px solid black;
-  width: 15vw;
-  text-align: center;
-}
-#profil header #nav-bar1 {
-  display: none;
-  position: fixed;
-}
-.icon1 {
-  padding-top: 10px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 900px) {
-  .icon0,
-  .btn0 {
-    display: none;
-  }
-}
 
-.icon0,
-.btn0 {
-  display: none;
-}
-[id^="btn1"]:checked + #nav-menu1 {
-  /* ^= veulent dire commence par suivi de btn pour aller chercher tout les id commancant par btn checked pour dire que lorsqu'il est cocher ont applique a l'ul display block*/
-  display: block;
-}
-.navbar0 {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 20px;
-}
-.nav-menu0 {
-  display: flex;
-  align-items: center;
-}
-/*bouton client     \/    */
-.icon1,
-.btn1 {
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-}
-#btn1 {
-  display: none; /*permet de cacher l'input de la navbar (la checkbox cochable)*/
-}
-[id^="btn1"]:checked + #nav-menu1 {
-  /* ^= veulent dire commence par suivi de btn pour aller chercher tout les id commancant par btn checked pour dire que lorsqu'il est cocher ont applique a l'ul display block*/
-  display: block;
-}
-/*bouton client     /\   */
-#nav-bar1 {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 10px;
-}
-/*section avec les ul>li pour les liens*/
-#nav-menu1 {
-  display: none;
-  position: absolute;
-  top: 75px;
-  right: 0px;
-  backdrop-filter: blur(1px);
-  background-color: rgb(255, 255, 255);
-}
-/*les lien du menu*/
-#nav-menu1 li {
-  list-style-type: none;
-  padding: 0 10px 0 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  text-align: right;
-}
-/*lien du menu*/
-#nav-menu1 li a {
-  text-decoration: none;
-  font-size: 1.3em;
-  color: black;
-}
-/*fin header*/
-#side-nav {
-  background-color: #def5de;
-  height: 100%;
-  width: 10vw;
-  position: fixed;
-  text-align: center;
-  font-size: 20px;
-  margin-top: -75px;
-  z-index: 1;
-}
-#side-nav li {
-  list-style-type: none;
-  margin-top: 110px;
-  transform: rotate(-90deg);
-}
-#profil #side-nav li {
-  margin-top: 220px;
-}
-#profil #side-nav .sidenav-profil{
-  transform: rotate(0deg);
-}
-#commandes #side-nav li{
-  margin-top: 220px;
-  transform: rotate(-90deg);
-}
-#commandes #side-nav li:hover {
-  transform: rotate(0deg);
-}
-#commandes #side-nav .sidenav-commandes{
-  transform: rotate(0deg);
-}
-#side-nav li:hover {
-  transform: rotate(0deg);
-}
-#side-nav li a {
-  text-decoration: none;
-  color: black;
-}
-#side-nav li a:hover {
-  color: #9eb897;
-}
-#footer-content {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-bottom: 25px;
-  padding-top: 25px;
-}
-#footer-link li {
-  list-style-type: none;
-  text-align: center;
-}
-#footer-link li a {
-  text-decoration: none;
-  color: black;
-}
-#footer-infos {
-  text-align: center;
-}
-.footer-txt1 {
-  color: white;
-  text-align: center;
-  font-size: 1.5em;
-  padding-top: 50px;
-}
-.footer-txt2 {
-  color: white;
-  text-align: center;
-  font-size: 1.3em;
-  border: 2px solid white;
-  margin-top: 20px;
-  margin-right: 120px;
-  margin-left: 120px;
-  padding: 10px;
-}
-.footer-img {
-  background-image: url("../images/footer-matcha.jpg");
-  background-size: cover;
-  height: 200px;
-  width: 450px;
-}
-@media (max-width: 600px) {
-  #side-nav {
-    display: none;
-  }
-  #footer-content {
-    display: flex;
-    flex-direction: column;
-  }
-  footer {
-    padding-left: 0vw;
-  }
-  .footer-img {
-    width: 85%;
-  }
-  .footer-txt1,
-  .footer-txt2 {
-    font-size: 1.1em;
-    padding-top: 15px;
-  }
-  #footer-infos {
-    padding: 15px;
-  }
-}
-@media (min-width: 601px) and (max-width: 900px) {
-  #side-nav {
-    display: none;
-  }
-  #footer-content {
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-  }
-  header,
-  footer {
-    padding-left: 0%;
-  }
-  .footer-img {
-    width: 90%;
-  }
-}
-@media screen and (min-width: 900px) {
-  .icon,
-  .btn,
-  .nav-menu li {
-    display: none;
-  }
-}
-.navbar {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 20px;
-}
-.nav-menu {
-  display: flex;
-  align-items: center;
-}
-.nav-item {
-  list-style-type: none;
-  padding: 0 10px 0 10px;
-}
-.home-link {
-  text-decoration: none;
-  font-size: 1.3em;
-  color: black;
-}
-@media screen and (max-width: 900px) {
-  .icon {
-    cursor: pointer;
-  }
-  .logo {
+/*header*/
+#profil header #barre-nav1 {
     display: none;
     position: fixed;
-  }
-  .navbar,
-  #btn,
-  .nav-menu {
-    display: none; /*permet de cacher l'input de la navbar (la checkbox cochable)*/
-  }
-  [id^="btn"]:checked + .nav-menu {
-    /* ^= veulent dire commence par suivi de btn pour aller chercher tout les id commancant par btn checked pour dire que lorsqu'il est cocher ont applique a l'ul display block*/
-    display: block;
-  }
-  .nav-menu {
-    background-color: #ffffff;
-    position: absolute;
-    top: 70px;
-    width: 50%;
-  }
-  .navbar {
-    align-items: center;
-  }
-  .icon,
-  .btn {
-    display: block;
-    padding: 5px;
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    width: 35px;
-    height: 35px;
-  }
-  a {
-    font-size: 1em;
-  }
-  .nav-item {
-    padding-bottom: 10px;
-    padding-top: 20px;
-  }
-  #nav-menu1 {
-    width: 50%;
-  }
 }
-@media screen and (max-width: 430px) {
-  .profil-header {
-    border: none;
-  }
+#profil #navigation-lateral li {
+    margin-top: 220px;
+}
+#profil #navigation-lateral .navigation-lateral-profil {
+    transform: rotate(0deg);
+}
+.profil-header {
+    font-size: 1.5em;
+    top: 20px;
+    right: 10px;
+    display: block;
+    position: absolute;
+    border: 2px solid black;
+    width: 15vw;
+    text-align: center;
+}
+#commandes header #barre-nav1 {
+    display: none;
+    position: fixed;
+}
+#commandes #navigation-lateral li {
+    margin-top: 220px;
+}
+#commandes #navigation-lateral .navigation-lateral-profil {
+    transform: rotate(0deg);
+}
+.commandes-header {
+    font-size: 1.5em;
+    top: 25px;
+    right: 10px;
+    display: block;
+    position: absolute;
+    border: 2px solid black;
+    text-align: center;
+}
+@media screen and (max-width: 650px) {
+    .commandes-header {
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 490px) {
+    .commandes-header {
+        font-size: 1em;
+        top: 30px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .commandes-header {
+        font-size: 1em;
+        top: 30px;
+        right: 5px;
+        border: none;
+    }
 }
 @media screen and (max-width: 400px) {
-  .footer-txt2 {
-    width: 50vw;
+    .commandes-header {
+        font-size: 0.8em;
+        top: 0px;
+        right: 0px;
+        border: none;
+    }
+}
+
+.logo {
+    padding-top: 15px;
+    padding-left: 20px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+#titre a {
+    font-family: "Pacifico", cursive;
+    color: #9eb897;
+    font-size: 1em;
+    text-decoration: none;
+}
+#titre {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    padding-top: 15px;
+}
+#profil header #barre-de-navigation {
+    display: none;
+    position: fixed;
+}
+
+/* DEBUT DES CHECKBOX POUR LES MENU BURGER //////////////////////////                      */
+
+.icone1 {
+    padding-top: 10px;
+    padding-right: 15px;
+}
+[id^="bouton1"]:checked + #menu-nav1 {
+    display: block;
+}
+.icone1,
+.bouton1 {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+#bouton1 {
+    display: none; /*permet de cacher l'input de la navbar (la checkbox cochable)*/
+}
+[id^="bouton1"]:checked + #menu-nav1 {
+    display: block;
+}
+#barre-nav1 {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+#menu-nav1 {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    backdrop-filter: blur(1px);
+    background-color: rgb(255, 255, 255);
+}
+#menu-nav1 li {
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: right;
+}
+#menu-nav1 li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: black;
+}
+@media screen and (min-width: 900px) {
+    .icone,
+    .bouton,
+    .menu-nav li {
+        display: none;
+    }
+}
+.barre-nav {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+.menu-nav {
+    display: flex;
+    align-items: center;
+}
+.element-nav {
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+}
+.lien-accueil {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: black;
+}
+@media screen and (max-width: 900px) {
+    .icone {
+        cursor: pointer;
+    }
+    .logo {
+        display: none;
+        position: fixed;
+    }
+    .barre-nav,
+    #bouton,
+    .menu-nav {
+        display: none;
+    }
+    [id^="bouton"]:checked + .menu-nav {
+        display: block;
+    }
+    .menu-nav {
+        background-color: #ffffff;
+        position: absolute;
+        top: 70px;
+        width: 50%;
+    }
+    .barre-nav {
+        align-items: center;
+    }
+    .icone,
+    .bouton {
+        display: block;
+        padding: 5px;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    a {
+        font-size: 1em;
+    }
+    .element-nav {
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+    #menu-nav1 {
+        width: 50%;
+    }
+}
+
+/* FIN DES CHECKBOX POUR LES MENU BURGER //////////////////////////                      */
+
+/*fin header*/
+#navigation-lateral {
+    background-color: #def5de;
+    height: 100%;
+    width: 10vw;
+    position: fixed;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -75px;
+    z-index: 1;
+}
+#navigation-lateral li {
+    list-style-type: none;
+    margin-top: 110px;
+    transform: rotate(-90deg);
+}
+#profil #navigation-lateral li {
+    margin-top: 220px;
+}
+#profil #navigation-lateral .navigation-lateral-profil {
+    transform: rotate(0deg);
+}
+#commandes #navigation-lateral li {
+    margin-top: 220px;
+    transform: rotate(-90deg);
+}
+#commandes #navigation-lateral li:hover {
+    transform: rotate(0deg);
+}
+#commandes #navigation-lateral .navigation-lateral-commandes {
+    transform: rotate(0deg);
+}
+#navigation-lateral li:hover {
+    transform: rotate(0deg);
+}
+#navigation-lateral li a {
+    text-decoration: none;
+    color: black;
+}
+#navigation-lateral li a:hover {
+    color: #9eb897;
+}
+#contenu-du-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+#liens-du-footer li {
+    list-style-type: none;
+    text-align: center;
+}
+#liens-du-footer li a {
+    text-decoration: none;
+    color: black;
+}
+#footer-infos {
+    text-align: center;
+}
+.footer-txt1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 50px;
+}
+.footer-txt2 {
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    border: 2px solid white;
+    margin-top: 20px;
+    margin-right: 120px;
+    margin-left: 120px;
+    padding: 10px;
+}
+.footer-img {
+    background-image: url("../images/footer-matcha.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 450px;
+}
+@media (max-width: 600px) {
+    #navigation-lateral {
+        display: none;
+    }
+    #contenu-du-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        padding-left: 0vw;
+    }
+    .footer-img {
+        width: 85%;
+    }
+    .footer-txt1,
+    .footer-txt2 {
+        font-size: 1.1em;
+        padding-top: 15px;
+    }
+    #footer-infos {
+        padding: 15px;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    #navigation-lateral {
+        display: none;
+    }
+    #contenu-du-footer {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    header,
+    footer {
+        padding-left: 0%;
+    }
+    .footer-img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .profil-header {
+        border: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .footer-txt2 {
+        width: 50vw;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
