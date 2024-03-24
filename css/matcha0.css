@@ -139,9 +139,6 @@
     }
 }
 @media (min-width: 601px) and (max-width: 900px) {
-    main{
-        padding-left: 0vw;
-    }
     .container-texte-defilant{
         width: 100%;
     }
@@ -155,6 +152,11 @@
     }
     .card__description {
         font-size: 0.8em;
+    }
+}
+@media screen and (max-width:900px){
+    #home-main{
+        padding-left: 0vw;
     }
 }
 
