@@ -1,158 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/matcha0.css">
-    <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/matcha0.css" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>Matcha Tea</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <header>
-        <img src="images/tea-logo.svg" alt="logo" class="logo">
-        <label for="btn">
-            <svg viewbox="0 0 100 80" width="40" height="40" class="icon">
-                <rect width="100" height="15"></rect>
-                <rect y="35" width="100" height="15"></rect>
-                <rect y="70" width="100" height="15"></rect>
-            </svg>
+      <img src="images/tea-logo.svg" alt="logo" class="logo" />
+      <label for="btn">
+        <svg viewbox="0 0 100 80" width="40" height="40" class="icon">
+          <rect width="100" height="15"></rect>
+          <rect y="35" width="100" height="15"></rect>
+          <rect y="70" width="100" height="15"></rect>
+        </svg>
+      </label>
+      <input type="checkbox" id="btn" class="btn" />
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="vente.html" class="home-link">Vente</a>
+        </li>
+        <li class="nav-item">
+          <a href="histoire.html" class="home-link">Histoire</a>
+        </li>
+        <li class="nav-item">
+          <a href="apropos.html" class="home-link">A propos</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="home-link">Contact</a>
+        </li>
+      </ul>
+      <h1 id="title"><a href="index.html">Matcha Tea</a></h1>
+      <nav id="nav-bar1">
+        <label for="btn1">
+          <img src="images/cat.jpg" alt="icone client" class="icon1" />
         </label>
-        <input type="checkbox" id="btn" class="btn">
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="vente.html" class="home-link">Vente</a></li>
-            <li class="nav-item"><a href="histoire.html" class="home-link">Histoire</a></li>
-            <li class="nav-item"><a href="a-prpos.html" class="home-link">A propos</a></li></li>
-            <li class="nav-item"><a href="contact.html" class="home-link">Contact</a></li>
+        <input type="checkbox" id="btn1" class="btn1" />
+        <ul id="nav-menu1">
+          <li class="nav-item">
+            <a href="profil.html" class="home-link">Compte</a>
+          </li>
+          <li class="nav-item">
+            <a href="commandes.html" class="home-link">Commandes</a>
+          </li>
         </ul>
-        <h1 id="title">Matcha Tea</h1>
-        <nav id="nav-bar1">
-            <label for="btn1">
-                <img src="images/cat.jpg" alt="icone client" class="icon1">
-            </label>
-                <input type="checkbox" id="btn1" class="btn1">
-            <ul id="nav-menu1">
-                <li class="nav-item"><a href="compte.html" class="home-link">Compte</a></li>
-                <li class="nav-item"><a href="commandes.html" class="home-link">Commandes</a></li>   
-            </ul>
-        </nav>
+      </nav>
     </header>
-        <ul >
-    <nav>
+    <ul>
+      <nav>
         <ul id="side-nav">
-            <li><a href="vente.html">Vente</a></li>
-            <li><a href="histoire.html">Histoire</a></li>
-            <li><a href="a-propos.html">A propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="vente.html">Vente</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="apropos.html">A propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-    <main id="home-main">
+      </nav>
+      <main id="home-main">
         <h2 class="title-prd">Meilleures ventes</h2>
         <section class="main-products">
-                <div class="card">
-                    <img src="images/premium.jpg" alt="matcha products">
-                    <div class="card__content">
-                    <p class="card__title">Thé Matcha Premium</p>
-                    <P class="card_subtitle">POUDRE DE THÉ VERT · 100% BIOLOGIQUE</P>
-                    <p class="card__description">Poudre de thé Matcha biologique de qualité cérémonielle de haute qualité d'Uji, Kyoto, Japon. Saveur naturelle légèrement sucrée et agréable.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Innercure-main.jpg" alt="matcha products">
-                    <div class="card__content">
-                    <p class="card__title">Inner Cure</p>
-                    <P class="card_subtitle">BIEN-ÊTRE DIGESTIF ET DE L'HUMEUR</P>
-                    <p class="card__description">Développé avec des experts du microbiome, Inner Cure vise à améliorer le système digestif, le système immunitaire et l'humeur. Notre formule travailleuse soulage les estomacs inconfortables et aide à obtenir une réduction durable des ballonnements.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/original-main.jpg" alt="matcha products">
-                    <div class="card__content">
-                    <p class="card__title">Thé Matcha Original</p>
-                    <P class="card_subtitle">PUISSANCE DU THÉ VERT · 100% BIOLOGIQUE.</P>
-                    <p class="card__description">Poudre de thé Matcha biologique de qualité cérémonielle d'Uji, Kyoto, Japon. Saveur douce et agréable.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/facialGlow-main.jpg" alt="matcha products">
-                    <div class="card__content">
-                    <p class="card__title">Facial Glow Serum</p>
-                    <P class="card_subtitle">ENHANCEUR D'ÉCLAT NATUREL</P>
-                    <p class="card__description">Experience real results with our Vitamin C serum, enriched with Niacinamide and Matcha. This powerful combo works to firm and brighten your skin while fighting the signs of photoaging. Upgrade your skincare routine for a noticeably healthier, glowing complexion.</p>
-                    </div>
-                </div>
+          <div class="card">
+            <img src="images/premium.jpg" alt="matcha products" />
+            <div class="card__content">
+              <p class="card__title">Thé Matcha Premium</p>
+              <p class="card_subtitle">POUDRE DE THÉ VERT · 100% BIOLOGIQUE</p>
+              <p class="card__description">
+                Poudre de thé Matcha biologique de qualité cérémonielle de haute
+                qualité d'Uji, Kyoto, Japon. Saveur naturelle légèrement sucrée
+                et agréable.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Innercure-main.jpg" alt="matcha products" />
+            <div class="card__content">
+              <p class="card__title">Inner Cure</p>
+              <p class="card_subtitle">BIEN-ÊTRE DIGESTIF ET DE L'HUMEUR</p>
+              <p class="card__description">
+                Développé avec des experts du microbiome, Inner Cure vise à
+                améliorer le système digestif, le système immunitaire et
+                l'humeur. Notre formule travailleuse soulage les estomacs
+                inconfortables et aide à obtenir une réduction durable des
+                ballonnements.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/original-main.jpg" alt="matcha products" />
+            <div class="card__content">
+              <p class="card__title">Thé Matcha Original</p>
+              <p class="card_subtitle">
+                PUISSANCE DU THÉ VERT · 100% BIOLOGIQUE.
+              </p>
+              <p class="card__description">
+                Poudre de thé Matcha biologique de qualité cérémonielle d'Uji,
+                Kyoto, Japon. Saveur douce et agréable.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/facialGlow-main.jpg" alt="matcha products" />
+            <div class="card__content">
+              <p class="card__title">Facial Glow Serum</p>
+              <p class="card_subtitle">ENHANCEUR D'ÉCLAT NATUREL</p>
+              <p class="card__description">
+                Experience real results with our Vitamin C serum, enriched with
+                Niacinamide and Matcha. This powerful combo works to firm and
+                brighten your skin while fighting the signs of photoaging.
+                Upgrade your skincare routine for a noticeably healthier,
+                glowing complexion.
+              </p>
+            </div>
+          </div>
         </section>
         <section class="container-texte-defilant">
-            <div class="text-livraison">
-                <p>LIVRAISON GRATUITE POUR LES COMMANDES DE PLUS DE 35 €  </p>
-                <p>🚚 EN 48-72 HEURES</p>
-                <p>🎫15% sur tout le site avec le code "LAPLATEFORME"🎫</p>
-                <p>LIVRAISON GRATUITE POUR LES COMMANDES DE PLUS DE 35 €</p>
-                <p>🚚 EN 48-72 HEURES</p>
-                <p>🎫15% sur tout le site avec le code "LAPLATEFORME"🎫</p>
-            </div>
-        </section>       
+          <div class="text-livraison">
+            <p>LIVRAISON GRATUITE POUR LES COMMANDES DE PLUS DE 35 €</p>
+            <p>🚚 EN 48-72 HEURES</p>
+            <p>🎫15% sur tout le site avec le code "LAPLATEFORME"🎫</p>
+            <p>LIVRAISON GRATUITE POUR LES COMMANDES DE PLUS DE 35 €</p>
+            <p>🚚 EN 48-72 HEURES</p>
+            <p>🎫15% sur tout le site avec le code "LAPLATEFORME"🎫</p>
+          </div>
+        </section>
         <h2 class="title-prd">Coffret</h2>
         <section class="main-products">
-                <div class="card">
-                    <img src="images/coffret1.jpg" alt="matcha products">
-                    <div class="card__content">
-                    <p class="card__title">Coffret de Demárrage Essentiel</p>
-                    <P class="card_subtitle">ENSEMBLE DE MATCHA · QUALITÉ ORIGINALE</P>
-                    <p class="card__description">Thé Matcha Original (30 g)<br>Fouet Électrique<br>Cuillère à mesurer Matcha (1 g)</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/coffret2.jpg" alt="matcha products">
-                    <div class="card__content">
-                    <p class="card__title">Coffret Avancé de Matcha</p>
-                    <P class="card_subtitle">DEUX QUALITÉS · SET DE MATCHA</P>
-                    <p class="card__description">Thé Matcha Premium (30 g) <br>Thé Matcha Original (30 g) <br>Cuillère à mesurer Matcha (1 g) <br>Fouet à Bambou Chasen</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/equilibre.jpg" alt="matcha products">
-                    <div class="card__content">
-                    <p class="card__title">Coffret Équilibre Matcha</p>
-                    <P class="card_subtitle">DEUX QUALITÉS · SET DE MATCHA</P>
-                    <p class="card__description">Idéal pour prendre du matcha à la maison, au travail ou à emporter avec vous et à consommer à tout moment. Avec cet ensemble, vous pourrez comparer et déguster deux qualités de matcha.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/coffret3.jpg" alt="matcha products">
-                    <div class="card__content">
-                    <p class="card__title">Coffret Expert Matcha</p>
-                    <P class="card_subtitle">ENSEMBLE DE MATCHA DE QUALITÉ SUPÉRIEURE</P>
-                    <p class="card__description">Avec cet ensemble, préparer un matcha est simple et rapide. Avec la cuillère à mesurer, votre matcha reste toujours le même et le fouet en bambou vous aidera à dissoudre complètement le matcha et à créer une fine couche de mousse.</p>
-                    </div>
-                </div>
+          <div class="card">
+            <img src="images/coffret1.jpg" alt="matcha products" />
+            <div class="card__content">
+              <p class="card__title">Coffret de Demárrage Essentiel</p>
+              <p class="card_subtitle">
+                ENSEMBLE DE MATCHA · QUALITÉ ORIGINALE
+              </p>
+              <p class="card__description">
+                Thé Matcha Original (30 g)<br />Fouet Électrique<br />Cuillère à
+                mesurer Matcha (1 g)
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/coffret2.jpg" alt="matcha products" />
+            <div class="card__content">
+              <p class="card__title">Coffret Avancé de Matcha</p>
+              <p class="card_subtitle">DEUX QUALITÉS · SET DE MATCHA</p>
+              <p class="card__description">
+                Thé Matcha Premium (30 g) <br />Thé Matcha Original (30 g)
+                <br />Cuillère à mesurer Matcha (1 g) <br />Fouet à Bambou
+                Chasen
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/equilibre.jpg" alt="matcha products" />
+            <div class="card__content">
+              <p class="card__title">Coffret Équilibre Matcha</p>
+              <p class="card_subtitle">DEUX QUALITÉS · SET DE MATCHA</p>
+              <p class="card__description">
+                Idéal pour prendre du matcha à la maison, au travail ou à
+                emporter avec vous et à consommer à tout moment. Avec cet
+                ensemble, vous pourrez comparer et déguster deux qualités de
+                matcha.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/coffret3.jpg" alt="matcha products" />
+            <div class="card__content">
+              <p class="card__title">Coffret Expert Matcha</p>
+              <p class="card_subtitle">
+                ENSEMBLE DE MATCHA DE QUALITÉ SUPÉRIEURE
+              </p>
+              <p class="card__description">
+                Avec cet ensemble, préparer un matcha est simple et rapide. Avec
+                la cuillère à mesurer, votre matcha reste toujours le même et le
+                fouet en bambou vous aidera à dissoudre complètement le matcha
+                et à créer une fine couche de mousse.
+              </p>
+            </div>
+          </div>
         </section>
-    </main>
-    <footer id="footer-content">
+      </main>
+      <footer id="footer-content">
         <section>
-            <h3>Navigaton</h3>
-                <ul id="footer-link">
-                    <li><a href="index.html">Acceuil</a></li>
-                    <li><a href="histoire.html">Histoire</a></li>
-                    <li><a href="a-propos.html">A propos</a></li>
-                    <li><a href="vente.html">Vente</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+          <h3>Navigaton</h3>
+          <ul id="footer-link">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="histoire.html">Histoire</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="vente.html">Vente</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </section>
         <section class="footer-img">
-            <p class="footer-txt1">Thanks for stopping by !</p>
-            <p class="footer-txt2">Let's keep in touch</p>
+          <p class="footer-txt1">Thanks for stopping by !</p>
+          <p class="footer-txt2">Let's keep in touch</p>
         </section>
         <section id="footer-infos">
-            <h3>Coordonnées</h3>
-                <p>8 Rue d'Hozier<br>13002<br>Marseille</p>
+          <h3>Coordonnées</h3>
+          <p>8 Rue d'Hozier<br />13002<br />Marseille</p>
         </section>
-    </footer>
-</body>
+      </footer>
+    </ul>
+  </body>
 </html>

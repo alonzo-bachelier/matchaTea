@@ -1,0 +1,145 @@
+body    {
+    background-color: #ffffff;
+}
+main {
+    background-color: #f1ddc5b5;
+    padding-left: 10vw;
+}
+
+main section {
+    
+    background-color: #f0fff0;
+    padding-top: 25px;
+    margin: 8%;
+}
+        
+h2,h3{
+    text-align: center;
+    font-size: 25px;
+    width: fit-content;
+    border-left: 2px solid #DDC869;
+    border-bottom: 2px solid #DDC869;
+}
+footer h3{
+    border: none;
+}
+
+.ligne4, .ligne3,.ligne2,.ligne1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+
+.descriptionProduit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0fff0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+}
+.descriptionProduit img{
+    width: 300px;
+    height: auto;
+}
+
+.descriptionProduit p {
+    text-align: center;
+    font-family: "Tenor Sans";
+    font-size: 20px;
+}
+
+.origineMatcha {font-size:15px ;}
+.shop{
+    display: flex;
+    flex-direction: column;
+}
+.shop p {
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+span i {color: white;}
+
+button i {color: #43390F;}
+
+.bouton {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 10px;
+    border: 1px solid #43390F;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+    color: #43390F;
+    z-index: 1;
+  }
+  
+.bouton:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #43390F;
+    transform: scale(1.05);
+}
+button:hover i{color:#ffffff}
+  
+.CLASSEE { 
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 30px;
+}
+/* Pour les téléphones */
+
+@media screen and (max-width:900px){
+    main{
+        padding-left: -10vw;
+    }
+}
+    /* TABLETTES, écrans de481PX à 1024px*/
+@media screen and (min-width:481px) and (max-width:1080px)
+  { 
+main section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 30px;
+    }
+} 
+
+/* ECRAN DE MAX 480px */
+
+@media screen and (max-width:481){
+    main section{
+    background-color: rgb(123, 14, 14);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 30px;
+    }
+    .descriptionProduit
+    {   display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #E1CE7A;
+        padding-bottom: 20px;
+    }
+.ligne1, .ligne2, .ligne3, .ligne4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 30px;
+    }
+}
+@media screen and (max-width:900px){
+    main{
+        padding-left:1vw;
+        padding-right: 1vw;
+        background-color: #f0fff0;
+    }
+    main section{
+        margin: 0;
+    }
+}
